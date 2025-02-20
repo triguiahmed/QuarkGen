@@ -61,6 +61,7 @@ dev = [
     "codeflash>=0.8.4",
     "hypothesis>=6.123.17",
     "locust>=2.32.9",
+    "types-cachetools>=5.5.0.20240820",
 ]
 
 [tool.uv.sources]
