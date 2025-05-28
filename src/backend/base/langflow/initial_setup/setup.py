@@ -559,8 +559,6 @@ async def copy_profile_pictures() -> None:
             if str(rel_path) not in target_files:
                 dst_file = target / rel_path
                 tasks.append(copy_file(src_file, dst_file, rel_path))
-            else:
-                logger.debug(f"Skipped existing file: '{rel_path}'")
 
         if tasks:
             await asyncio.gather(*tasks)
