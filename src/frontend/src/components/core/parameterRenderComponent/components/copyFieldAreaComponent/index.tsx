@@ -8,7 +8,7 @@ import IconComponent from "../../../../common/genericIconComponent";
 import { Input } from "../../../../ui/input";
 import { InputProps, TextAreaComponentType } from "../../types";
 
-const BACKEND_URL = "BACKEND_URL";
+const BACKEND_URL = process.env.BACKEND_URL || "http://localhost:7860";
 const MCP_SSE_VALUE = "MCP_SSE";
 const { protocol, host } = customGetHostProtocol();
 const URL_WEBHOOK = `${protocol}//${host}/api/v1/webhook/`;

@@ -1,8 +1,10 @@
 FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
+
 ENV TZ=UTC
 
 WORKDIR /app
 
+# System dependencies
 RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install -y \
@@ -10,9 +12,13 @@ RUN apt-get update \
     curl \
     npm \
     git \
+    lsof \
+    libpq-dev \
+    python3-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+# Copy the entire project (adjust if you want to be selective)
 COPY . /app
 
 # Install dependencies using uv
@@ -28,4 +34,4 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 EXPOSE 7860
 EXPOSE 3000
 
-CMD ["./docker/dev.start.sh"]
+CMD ["bash", "./docker/dev.start.sh"]

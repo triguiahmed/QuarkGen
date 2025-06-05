@@ -22,8 +22,7 @@ export default defineConfig(({ mode }) => {
 
   const apiRoutes = API_ROUTES || ["^/api/v1/", "^/api/v2/", "/health"];
 
-  const target =
-    env.VITE_PROXY_TARGET || PROXY_TARGET || "http://127.0.0.1:7860";
+  const target = env.VITE_PROXY_TARGET || PROXY_TARGET || "http://127.0.0.1:7860";
 
   const port = Number(env.VITE_PORT) || PORT || 3000;
 
@@ -35,9 +34,9 @@ export default defineConfig(({ mode }) => {
       ws: true,
     };
     return proxyObj;
-  }, {});
+  }, {} as Record<string, any>);
 
-  return {
+  return defineConfig({
     base: BASENAME || "",
     build: {
       outDir: "build",
@@ -61,5 +60,5 @@ export default defineConfig(({ mode }) => {
         ...proxyTargets,
       },
     },
-  };
+  });
 });
