@@ -114,6 +114,7 @@ export const nodeColors: { [char: string]: string } = {
   astra_assistants: "#272541",
   langchain_utilities: "#31A3CC",
   output_parsers: "#E6A627",
+    
   // custom_components: "#ab11ab",
   retrievers: "#e6b25a",
   str: "#4F46E5",

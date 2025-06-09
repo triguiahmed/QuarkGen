@@ -1,5 +1,5 @@
 import AlertDropdown from "@/alerts/alertDropDown";
-import QuarkGenLogo from "@/assets/QuarkGenLogo.svg?react";
+import QuarkGenLogo from "@/assets/NeoXamLogo.svg?react";
 import ForwardedIconComponent from "@/components/common/genericIconComponent";
 import ShadTooltip from "@/components/common/shadTooltipComponent";
 import { Button } from "@/components/ui/button";
@@ -57,20 +57,16 @@ export default function AppHeader(): JSX.Element {
         className={`z-30 flex items-center gap-2`}
         data-testid="header_left_section_wrapper"
       >
-        <Button
-          unstyled
-          onClick={() => navigate("/")}
-          className="mr-1 flex h-8 w-8 items-center"
-          data-testid="icon-ChevronLeft"
-        >
-        <QuarkGenLogo className="h-10 w-20" />
-        </Button>
-        {ENABLE_DATASTAX_LANGFLOW && (
-          <>
-            <CustomOrgSelector />
-            <CustomProductSelector />
-          </>
-        )}
+      <Button
+      unstyled
+      onClick={() => navigate("/")}
+      className="mr-1 flex items-center space-x-2"
+      data-testid="icon-ChevronLeft"
+      >
+      <QuarkGenLogo className="h-6 w-6" />
+      <span className="text-m font-semibold">QuarkGen</span>
+      </Button>
+       
       </div>
 
       {/* Middle Section */}

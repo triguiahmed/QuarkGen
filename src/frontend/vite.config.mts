@@ -55,6 +55,8 @@ export default defineConfig(({ mode }) => {
     },
     plugins: [react(), svgr(), tsconfigPaths()],
     server: {
+      host: true,
+      allowedHosts: ['ap-dev-vm-atr-ii'],
       port: port,
       proxy: {
         ...proxyTargets,

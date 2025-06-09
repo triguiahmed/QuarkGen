@@ -1,4 +1,4 @@
-import QuarkGenLogo from "@/assets/LangfloQuarkGenLogowLogo.svg?react";
+import QuarkGenLogo from "@/assets/NeoXamLogo.svg?react";
 import { useState } from "react";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";

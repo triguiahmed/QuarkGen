@@ -1,4 +1,4 @@
-import QuarkGenLogo from "@/assets/QuarkGenLogo.svg?react";
+import QuarkGenLogo from "@/assets/NeoXamLogo.svg?react";
 import { TextEffectPerChar } from "@/components/ui/textAnimation";
 import CustomChatInput from "@/customization/components/custom-chat-input";
 import { ENABLE_IMAGE_ON_PLAYGROUND } from "@/customization/feature-flags";

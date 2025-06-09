@@ -1,4 +1,4 @@
-import QuarkGenLogo from "@/assets/QuarkGenLogo.svg?react";
+import QuarkGenLogo from "@/assets/NeoXamLogo.svg?react";
 
 export default function LogoIcon() {
   return (
