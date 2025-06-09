@@ -71,7 +71,7 @@ export default function LoginPage(): JSX.Element {
             className="mb-4 h-10 w-10 scale-[1.5]"
           />
           <span className="mb-6 text-2xl font-semibold text-primary">
-            Sign in to Langflow
+            Sign in to QuarkGen
           </span>
           <div className="mb-3 w-full">
             <Form.Field name="username">
@@ -128,11 +128,11 @@ export default function LoginPage(): JSX.Element {
             </Form.Submit>
           </div>
           <div className="w-full">
-            <CustomLink to="/signup">
+            {/* <CustomLink to="/signup">
               <Button className="w-full" variant="outline" type="button">
                 Don't have an account?&nbsp;<b>Sign Up</b>
               </Button>
-            </CustomLink>
+            </CustomLink> */}
           </div>
         </div>
       </div>

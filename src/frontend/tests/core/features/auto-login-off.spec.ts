@@ -38,7 +38,7 @@ test(
 
     await page.goto("/");
 
-    await page.waitForSelector("text=sign in to langflow", { timeout: 30000 });
+    await page.waitForSelector("text=sign in to QuarkGen", { timeout: 30000 });
 
     await page.getByPlaceholder("Username").fill("langflow");
     await page.getByPlaceholder("Password").fill("langflow");
@@ -181,7 +181,7 @@ test(
 
     await page.getByText("Logout", { exact: true }).click();
 
-    await page.waitForSelector("text=sign in to langflow", { timeout: 30000 });
+    await page.waitForSelector("text=sign in to QuarkGen", { timeout: 30000 });
 
     await page.getByPlaceholder("Username").fill(secondRandomName);
     await page.getByPlaceholder("Password").fill(randomPassword);
@@ -253,7 +253,7 @@ test(
 
     await page.getByText("Logout", { exact: true }).click();
 
-    await page.waitForSelector("text=sign in to langflow", { timeout: 30000 });
+    await page.waitForSelector("text=sign in to QuarkGen", { timeout: 30000 });
 
     await page.getByPlaceholder("Username").fill("langflow");
     await page.getByPlaceholder("Password").fill("langflow");
