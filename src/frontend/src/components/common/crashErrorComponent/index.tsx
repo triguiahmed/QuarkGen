@@ -28,12 +28,12 @@ export default function CrashErrorComponent({
                 <p>
                   Please report errors with detailed tracebacks on the{" "}
                   <a
-                    href="https://github.com/langflow-ai/langflow/issues"
+                    href="https://support.neoxam.com/secure/Dashboard.jspa"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-medium hover:underline"
                   >
-                    GitHub Issues
+                    NeoXam Support{" "}
                   </a>{" "}
                   page.
                   <br></br>
@@ -44,15 +44,15 @@ export default function CrashErrorComponent({
 
             <CardFooter>
               <div className="m-auto mt-4 flex justify-center">
-                <Button onClick={resetErrorBoundary}>Restart Langflow</Button>
+                <Button onClick={resetErrorBoundary}>Restart QuarkGen</Button>
 
                 <a
-                  href="https://github.com/langflow-ai/langflow/issues/new"
+                  href="https://support.neoxam.com/secure/Dashboard.jspa"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Button className="ml-3" ignoreTitleCase variant={"outline"}>
-                    Report on GitHub
+                    Report on Jira
                   </Button>
                 </a>
               </div>
