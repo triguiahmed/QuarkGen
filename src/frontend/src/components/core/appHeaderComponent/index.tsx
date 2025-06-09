@@ -1,5 +1,5 @@
 import AlertDropdown from "@/alerts/alertDropDown";
-import QuarkGenLogo from "@/assets/NeoXamLogo.svg?react";
+import QuarkGenLogo from "@/assets/QuarkGenLogo.svg?react";
 import ForwardedIconComponent from "@/components/common/genericIconComponent";
 import ShadTooltip from "@/components/common/shadTooltipComponent";
 import { Button } from "@/components/ui/button";

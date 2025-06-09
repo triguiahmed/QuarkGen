@@ -1,4 +1,4 @@
-import QuarkGenLogo from "@/assets/NeoXamLogo.svg?react";
+import QuarkGenLogo from "@/assets/QuarkGenLogo.svg?react";
 import { useLoginUser } from "@/controllers/API/queries/auth";
 import { useContext, useState } from "react";
 import { Button } from "../../../components/ui/button";

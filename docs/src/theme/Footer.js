@@ -60,7 +60,7 @@ export default function FooterWrapper(props) {
         }}
       >
         <img
-          src="/img/NeoXamLogo.svg"
+          src="/img/QuarkGenLogo.svg"
           style={{ width: "40px" }}
           alt="Search"
         />

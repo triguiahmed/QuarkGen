@@ -1,4 +1,4 @@
-import QuarkGenLogo from "@/assets/NeoXamLogo.svg?react";
+import QuarkGenLogo from "@/assets/QuarkGenLogo.svg?react";
 import { useLoginUser } from "@/controllers/API/queries/auth";
 import { CustomLink } from "@/customization/components/custom-link";
 import * as Form from "@radix-ui/react-form";

@@ -1,4 +1,4 @@
-import QuarkGenLogo from "@/assets/NeoXamLogo.svg?react";
+import QuarkGenLogo from "@/assets/QuarkGenLogo.svg?react";
 import ForwardedIconComponent from "@/components/common/genericIconComponent";
 import CardsWrapComponent from "@/components/core/cardsWrapComponent";
 import { Button } from "@/components/ui/button";
