@@ -14,6 +14,7 @@ RUN apt-get update \
     git \
     lsof \
     libpq-dev \
+    sshpass -y \
     python3-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
