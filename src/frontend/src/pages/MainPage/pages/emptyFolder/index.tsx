@@ -19,7 +19,7 @@ export const EmptyFolder = ({ setOpenModal }: EmptyFolderProps) => {
           {folders?.length > 1 ? "Empty project" : "Start building"}
         </h3>
         <p className="pb-5 text-sm text-secondary-foreground">
-          Begin with a template, or start from scratch.
+          Choose a template or begin from scratch.
         </p>
         <Button
           variant="default"

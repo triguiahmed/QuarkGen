@@ -113,7 +113,7 @@ export default function PublishDropdown() {
             <IconComponent name="Download" className={`icon-size mr-2`} />
             <span>Export</span>
           </DropdownMenuItem>
-          <CustomLink
+          {/* <CustomLink
             className={cn("flex-1")}
             to={`/mcp/folder/${folderId}`}
             target={customMcpOpen()}
@@ -130,7 +130,7 @@ export default function PublishDropdown() {
                 className={`icon-size ml-auto hidden group-hover:block`}
               />
             </DropdownMenuItem>
-          </CustomLink>
+          </CustomLink> */}
           {ENABLE_WIDGET && (
             <DropdownMenuItem
               onClick={() => setOpenEmbedModal(true)}
